@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/VictorGlobalPtyLtd/static/css/main.5854426c.css",
+    "main.js": "/VictorGlobalPtyLtd/static/js/main.dd4c6542.js",
+    "static/js/453.09ea3606.chunk.js": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js",
+    "static/media/StorageSolutions.jpg": "/VictorGlobalPtyLtd/static/media/StorageSolutions.813fb6f1d02b161d5df9.jpg",
+    "static/media/LogisticsSolutions.jpg": "/VictorGlobalPtyLtd/static/media/LogisticsSolutions.1aee6b5c1a6cd05758e7.jpg",
+    "static/media/OurServices.svg": "/VictorGlobalPtyLtd/static/media/OurServices.2a4fc11b478da0333cc0b460fbf9bfe2.svg",
+    "static/media/AboutUs.svg": "/VictorGlobalPtyLtd/static/media/AboutUs.9e508fc6ce41c7156d9d9dd67a4b3349.svg",
+    "static/media/Home.svg": "/VictorGlobalPtyLtd/static/media/Home.51787ed649f134d50e81817fcd780c4e.svg",
+    "static/media/OurReach.svg": "/VictorGlobalPtyLtd/static/media/OurReach.ea7cbd0ba73f88a6e77ec786f0f70967.svg",
+    "static/media/RequestQuote.svg": "/VictorGlobalPtyLtd/static/media/RequestQuote.5b15e9567a192e47b5b28461cdb2f9ee.svg",
+    "static/media/Tracking.svg": "/VictorGlobalPtyLtd/static/media/Tracking.0008f55f0e646fcc2b740f09d4c9c8ce.svg",
+    "static/media/OurCommitment.svg": "/VictorGlobalPtyLtd/static/media/OurCommitment.e76172f3db66a0e221d365c42b83a0e6.svg",
+    "static/media/ContactUs.svg": "/VictorGlobalPtyLtd/static/media/ContactUs.ab12e6c0567b5e8610e545c17bd69f1a.svg",
+    "static/media/OurServices2.svg": "/VictorGlobalPtyLtd/static/media/OurServices2.0b9de7fae586fa0908b9bb9f75beffa1.svg",
+    "index.html": "/VictorGlobalPtyLtd/index.html",
+    "main.5854426c.css.map": "/VictorGlobalPtyLtd/static/css/main.5854426c.css.map",
+    "main.dd4c6542.js.map": "/VictorGlobalPtyLtd/static/js/main.dd4c6542.js.map",
+    "453.09ea3606.chunk.js.map": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5854426c.css",
+    "static/js/main.dd4c6542.js"
+  ]
+}
