@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { HashRouter,Routes,Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import Header from './components/Header';
@@ -13,7 +13,7 @@ import RequestQuote from './pages/RequestQuote';
 function App() {
   return (
     <div className='App'>
-    <BrowserRouter>
+    <HashRouter>
     <Header/>
     <Routes>
       <Route path='/' element={<Home/>} />
@@ -23,7 +23,7 @@ function App() {
       <Route path='/requestquote' element={<RequestQuote/>} />
     </Routes>
     <Footer/>
-    </BrowserRouter>
+    </HashRouter>
     </div>
   );
 }
