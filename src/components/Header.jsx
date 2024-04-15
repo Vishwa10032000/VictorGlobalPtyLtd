@@ -53,7 +53,7 @@ function Header() {
                             <Nav.Link style={{ color: location.pathname === '/aboutus' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/aboutus' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/aboutus' ? "2px" : "0" }} as={Link} to="/aboutus">About Us</Nav.Link>
                             <Nav.Link style={{ color: location.pathname === '/services' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/services' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/services' ? "2px" : "0" }} as={Link} to="/services">Services</Nav.Link>
                             <Nav.Link style={{ color: location.pathname === '/contactus' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/contactus' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/contactus' ? "2px" : "0" }} as={Link} to="/contactus">Contact Us</Nav.Link>
-                            <Link className='text-decoration-none' to="/requestquote">
+                            <Link className='text-decoration-none my-1' to="/requestquote">
                                 <button className='primary-btn d-flex align-items-center'>Request Quote <ArrowOutward /></button>
                             </Link>
                         </Nav>
