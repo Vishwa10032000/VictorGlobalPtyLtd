@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowOutward, KeyboardArrowUp } from '@mui/icons-material';
+import { KeyboardArrowUp } from '@mui/icons-material';
 
 function Header() {
     const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -48,14 +48,14 @@ function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle className='col-md-1 col-2' style={{ background: "var(--primary-color)" }} aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-                        <Nav className="col-md-9 d-flex justify-content-between">
+                        <Nav className="col-md-6 d-flex justify-content-between">
                             <Nav.Link style={{ color: location.pathname === '/' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/' ? "2px" : "0" }} as={Link} to="/">Home</Nav.Link>
                             <Nav.Link style={{ color: location.pathname === '/aboutus' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/aboutus' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/aboutus' ? "2px" : "0" }} as={Link} to="/aboutus">About Us</Nav.Link>
                             <Nav.Link style={{ color: location.pathname === '/services' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/services' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/services' ? "2px" : "0" }} as={Link} to="/services">Services</Nav.Link>
                             <Nav.Link style={{ color: location.pathname === '/contactus' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/contactus' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/contactus' ? "2px" : "0" }} as={Link} to="/contactus">Contact Us</Nav.Link>
-                            <Link className='text-decoration-none my-1' to="/requestquote">
+                            {/* <Link className='text-decoration-none my-1' to="/requestquote">
                                 <button className='primary-btn d-flex align-items-center'>Request Quote <ArrowOutward /></button>
-                            </Link>
+                            </Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </div>

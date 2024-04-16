@@ -5,8 +5,8 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import {  ArrowOutward, Send } from '@mui/icons-material';
-import { Link } from 'react-router-dom';
+import {  Send } from '@mui/icons-material';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,12 +18,12 @@ function ContactUs() {
 
   const classes = useStyles();
 
-  const handleChange = () =>{
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-  });
-  }
+  // const handleChange = () =>{
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth"
+  // });
+  // }
   return (
     <div className='container'>
       <div className="row align-items-center">
@@ -75,11 +75,11 @@ function ContactUs() {
         </div>
         <div className='col-md-4'>
           <div className='row'>
-          <div className='col-md-12 my-3'>
+          {/* <div className='col-md-12 my-3'>
               <h2 className='contactus-subtitle'>{contactUsPageData.quote.title}</h2>
               <p className='contactus-description' >{contactUsPageData.quote.description}</p>
               <Link onClick={handleChange} className='text-decoration-none' to="/requestquote"><button className='primary-btn d-flex align-items-center'>Request Quote <ArrowOutward/></button></Link>
-            </div>
+            </div> */}
             <div className='col-md-12 my-3'>
               <h2 className='contactus-subtitle'>{contactUsPageData.address.title}</h2>
               {contactUsPageData.address.items.map((item, index) => (
