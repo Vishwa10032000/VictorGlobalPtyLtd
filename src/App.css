@@ -83,7 +83,7 @@ h1,h2,h3,h4,h5,h6{
   background: var(--white-color);
   padding: 20px;
   border-radius: 20px;
-  min-height: 380px;
+  min-height: 425px;
   transition: all 0.3s ease;
 }
 
@@ -127,7 +127,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-.aboutus-container {
+.aboutus-container,.home-country-card {
   text-align: center;
   background-color: var(--white-color);
   padding: 20px;
@@ -139,7 +139,12 @@ h1,h2,h3,h4,h5,h6{
   transition: all 0.3s ease;
 }
 
-.aboutus-container:hover {
+.home-country-card{
+  min-height: 525px;
+}
+
+
+.aboutus-container:hover,.home-country-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }

@@ -4,9 +4,10 @@ import {
   LocalPharmacyOutlined,
   StyleOutlined,
   DevicesOutlined, AirplanemodeActive, DirectionsBoat, EmailOutlined, LocalShippingOutlined, LocationCityOutlined, PhoneAndroidOutlined,
-  ScienceOutlined,
+  
   Warehouse,
-  SupportAgent
+  SupportAgent,
+  Public
 } from "@mui/icons-material";
 import ServicesImage from '../assets/OurServices.svg'
 import OurServicesImage from '../assets/OurServices2.svg'
@@ -20,13 +21,18 @@ import HomeImage from '../assets/Home.svg'
 import StorageSolutionsImage from '../assets/StorageSolutions.jpg'
 import LogisticsSolutionsImage from '../assets/LogisticsSolutions.jpg'
 
+import IndiaImage from '../assets/India.jpg'
+import ChinaImage from '../assets/China.jpg'
+import MalaysiaImage from '../assets/Malaysia.jpg'
+
+
 const homePageData = {
   image: HomeImage,
   welcomeMessage: "Welcome to Victor Global Pty Ltd",
-  description: "Elevating Freight Forwarding Worldwide.",
+  description: "Beyond Boundaries: Fulfilling Every Sector's Needs",
   overview: {
     title: "Overview",
-    description: "At Victor Global Pty Ltd, we elevate your freight experience with comprehensive solutions for all your forwarding needs. From air and sea shipments to customs clearance, warehousing, and local transportation, we deliver reliable, professional services across a wide network spanning Australia, New Zealand, India, Malaysia, Singapore, China, Thailand, the Philippines, Vietnam, and Indonesia. Trust us to handle your transportation requirements and keep you informed with real-time tracking updates.",
+    description: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Victor Global, your one-stop destination for comprehensive end-to-end services in global sourcing. We specialize in connecting businesses with top-notch suppliers worldwide, ensuring seamless procurement processes and superior quality products. With our expertise and extensive network, we pave the way for businesses to thrive in today's competitive marketplace. Our dedicated team meticulously evaluates suppliers, negotiates contracts, and manages logistics to ensure that our clients receive the best possible value for their investments. Leveraging our global network, we identify and partner with reliable suppliers across various industries, including FMCG, fashion, lifestyle, retail goods, and more. Whether you're seeking raw materials, finished products, or custom solutions, we streamline the sourcing process to meet your specific requirements and exceed your expectations.  <br/><br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Victor Global Pty Ltd, we elevate your freight experience with comprehensive solutions for all your forwarding needs. From air and sea shipments to customs clearance, warehousing, and local transportation, we deliver reliable, professional services across a wide network spanning Australia, New Zealand, India, Malaysia, Singapore, China, Thailand, the Philippines, Vietnam, and Indonesia. Trust us to handle your transportation requirements and keep you informed with real-time tracking updates.",
   },
   quote: {
     title: "Need A Quote?",
@@ -37,6 +43,11 @@ const homePageData = {
     description: "Victor Global Pty Limited serves a diverse range of industries, providing tailored freight forwarding solutions to meet the unique needs of each sector.",
     sectors: [
       {
+        name: "Global Sourcing",
+        description: "Effective global product sourcing is essential for securing a competitive edge, enabling you to import top-notch, cost-effective goods to attract customer base. Through strategic partnerships in key regions such as Malaysia, China and India, Victor Global facilitates connections with premier suppliers to address your product sourcing challenges effectively.  ",
+        icon: <Public />
+      },
+      {
         name: "Fast-Moving Consumer Goods (FMCG)",
         description: "We understand the fast-paced nature of the FMCG industry and offer efficient transportation and distribution solutions to ensure your products reach shelves on time, every time.",
         icon: <FastfoodOutlined />
@@ -46,11 +57,7 @@ const homePageData = {
         description: "From clothing and electronics to home goods and beyond, we specialize in handling retail goods of all types, offering reliable shipping and warehousing solutions to keep your supply chain running smoothly.",
         icon: <ShoppingCartOutlined />
       },
-      {
-        name: "Chemicals",
-        description: "Safety and compliance are top priorities in the chemical industry. Our team is well-versed in handling hazardous materials and ensures that your chemical shipments are transported and stored with the utmost care and adherence to regulations.",
-        icon: <ScienceOutlined />
-      },
+     
       {
         name: "Pharmaceutical Products",
         description: "With strict regulations and sensitive products, the pharmaceutical industry requires precise handling and temperature-controlled environments. We provide specialized logistics solutions to ensure the integrity and security of your pharmaceutical shipments from origin to destination.",
@@ -84,6 +91,23 @@ const homePageData = {
       }
     ]
   },
+  globalSupportPartners:{
+    title:"Global Support Partners",
+    countries:[{
+      image:IndiaImage,
+    title:"India",
+      description:"With its skilled workforce, India is a key player in industries such as IT, pharmaceuticals, textiles, and automotive components. Experience cost-effective solutions, innovative products, and a rich cultural heritage that adds value to your sourcing experience."
+    },{
+      image:ChinaImage,
+    title:"China",
+      description:"Known as the world's manufacturing hub, China offers a vast array of products across various industries, including electronics, textiles, machinery, and consumer goods. Benefit from competitive pricing, advanced manufacturing capabilities, and a well-established logistics infrastructure."
+    },{
+      image:MalaysiaImage,
+    title:"Malaysia",
+      description:"Positioned strategically in Southeast Asia, Malaysia boasts a diverse range of industries, from electronics and automotive to palm oil and rubber. Enjoy access to high-quality products, reliable suppliers, and favorable trade agreements, making Malaysia an attractive sourcing destination."
+    },]
+
+  }
 };
 
 

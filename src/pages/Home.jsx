@@ -17,7 +17,8 @@ function Home() {
       <div className="row align-items-center ">
         <div className="col-lg-5 col-md-12 my-3">
           <h2 className='home-heading'>{homePageData.welcomeMessage}</h2>
-          {/* <h2 className="home-slogan">{homePageData.description}</h2>  */}
+          <h2 className="home-slogan">{homePageData.description}</h2> 
+
         </div>
         <div className="col-lg-7 col-md-12 my-3">
           <img src={homePageData.image} alt={homePageData.welcomeMessage} width="100%" />
@@ -26,7 +27,7 @@ function Home() {
       <div className='row'>
         <div className='col-md-12 my-3'>
           <h2 className='home-heading'>{homePageData.overview.title}</h2>
-          <p className='home-description'>{homePageData.overview.description}</p>
+          <p className='home-description' style={{textAlign:"justify"}} dangerouslySetInnerHTML={{ __html: homePageData.overview.description }} />
         </div>
 
         {/* <div className='col-md-4 my-3'>
@@ -87,6 +88,18 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className='row my-5' >
+        <h2 className='home-heading'>{homePageData.globalSupportPartners.title}</h2>
+      {homePageData.globalSupportPartners.countries.map((country, index) => (
+            <div className='col-md-4 my-3' key={index}>
+              <div className='w-100 home-country-card'>
+                <img className='rounded' src={country.image} alt={country.description} width="100%" />
+                <h2 className='home-subheading mt-2'>{country.title}</h2>
+                <p className='home-description'>{country.description}</p>
+              </div>
+            </div>
+          ))}
       </div>
     </div>
   )
