@@ -89,10 +89,10 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className='row my-5' >
+      <div className='row my-5 justify-content-center' >
         <h2 className='home-heading'>{homePageData.globalSupportPartners.title}</h2>
       {homePageData.globalSupportPartners.countries.map((country, index) => (
-            <div className='col-md-4 my-3' key={index}>
+            <div className='col-lg-4 col-md-6 my-3' key={index}>
               <div className='w-100 home-country-card'>
                 <img className='rounded' src={country.image} alt={country.description} width="100%" />
                 <h2 className='home-subheading mt-2'>{country.title}</h2>
