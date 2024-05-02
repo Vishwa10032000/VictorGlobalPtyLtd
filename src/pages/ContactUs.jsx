@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { contactUsPageData } from '../data/Data';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@mui/material/Grid';
@@ -6,6 +6,8 @@ import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import {  Send } from '@mui/icons-material';
+import emailjs from '@emailjs/browser'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -14,9 +16,66 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// Your EmailJS service ID
+const serviceId = 'service_6wo7u4s';
+// Your EmailJS template ID
+const templateId = 'template_1vud1ae';
+// Your EmailJS user ID
+const userId = 'G_P5l09Jl2df-aRca';
+
 function ContactUs() {
 
   const classes = useStyles();
+
+  const [formData, setFormData] = useState({});
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const messageTemplate = (formData) => {
+    return `
+    First Name: ${formData.firstName}
+    Last Name: ${formData.lastName}
+    Company Name: ${formData.companyName || 'Not provided'}
+    Role/Position in the Company: ${formData.role || 'Not provided'}
+    Phone: ${formData.phone}
+    Email: ${formData.email}
+    How can we help?
+    ${formData.help || 'No specific request provided'}
+  
+    ${
+      formData.agree
+        ? 'The visitor has agreed to the Victor Global Pty Ltd Privacy Policy and Terms and Conditions.'
+        : 'The visitor has not agreed to the privacy policy and terms and conditions.'
+    }`;
+  };
+  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Send email using EmailJS
+    emailjs.send(serviceId, templateId, 
+      {
+        from_name:formData.firstName,
+        to_name: 'Victor Global team',
+        from_email:formData.email,
+        to_email:'victorglobalptyltd@gmail.com',
+        message: messageTemplate(formData),
+      }, userId)
+      .then(()=>{
+        alert('Thank you. We will get back to you as soon as possible.')
+        setFormData({})
+      },(error) =>{
+  
+        console.log(error);
+  
+        alert('Something went wrong.')
+      }
+      
+      )
+  };
 
   // const handleChange = () =>{
   //   window.scrollTo({
@@ -24,6 +83,7 @@ function ContactUs() {
   //     behavior: "smooth"
   // });
   // }
+
   return (
     <div className='container'>
       <div className="row align-items-center">
@@ -38,40 +98,51 @@ function ContactUs() {
         <div className='col-md-8 my-3 '>
           <h2 className='contactus-subtitle'>{contactUsPageData.subtitle}</h2>
           <p className='contactus-description'>{contactUsPageData.description}</p>
-          <form>
-            <div className={classes.root}>
-              <Grid container spacing={3}>
-                {contactUsPageData.inputFields.map((field) => (
-                  <Grid item xs={12} sm={field.type === 'textarea' || field.type === 'checkbox' ? 12 : 6} key={field.id}>
-
-                    {field.type === 'textarea' ? (
-                      <TextField
-                        label={field.label}
-                        multiline
-                        rows={field.rows}
-                        required={field.required}
-                        fullWidth
-                      />
-                    ) : field.type === 'checkbox' ? (
-                      <FormControlLabel
-                      className='mb-2'
-                        control={<Checkbox id={field.id} />}
-                        label={field.label}
-                      />
-                    ) : (
-                      <TextField
-                        label={field.label}
-                        required={field.required}
-                        fullWidth
-                      />
-                    )}
-                  </Grid>
-                ))}
+          <form onSubmit={handleSubmit}>
+        <div className={classes.root}>
+          <Grid container spacing={3}>
+            {contactUsPageData.inputFields.map((field) => (
+              <Grid item xs={12} sm={field.type === 'textarea' || field.type === 'checkbox' ? 12 : 6} key={field.id}>
+                {field.type === 'textarea' ? (
+                  <TextField
+                    label={field.label}
+                    multiline
+                    rows={field.rows}
+                    name={field.id}
+                    value={formData[field.id] || ''}
+                    onChange={handleChange}
+                    required={field.required}
+                    fullWidth
+                  />
+                ) : field.type === 'checkbox' ? (
+                  <FormControlLabel
+                  control={
+                    <Checkbox
+                      id={field.id}
+                      checked={formData[field.id] || false}
+                      onChange={handleChange}
+                      name={field.id}
+                    />
+                  }
+                  label={field.label}
+                />
+                
+                ) : (
+                  <TextField
+                    label={field.label}
+                    name={field.id}
+                    value={formData[field.id] || ''}
+                    onChange={handleChange}
+                    required={field.required}
+                    fullWidth
+                  />
+                )}
               </Grid>
-            </div>
-
-            <button type="submit" className="primary-btn">  Send <Send /></button>
-          </form>
+            ))}
+          </Grid>
+        </div>
+        <button type="submit" className="primary-btn">Send <Send /></button>
+      </form>
         </div>
         <div className='col-md-4'>
           <div className='row'>

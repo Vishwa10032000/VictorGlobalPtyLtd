@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { footerContent } from '../data/Data';
+
 // import { ArrowOutward } from '@mui/icons-material';
 
 function Footer() {

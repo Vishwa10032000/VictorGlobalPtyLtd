@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import  { requestQuotePageData }  from '../data/Data';
+import { requestQuotePageData } from '../data/Data';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
@@ -10,8 +10,15 @@ import { Send } from '@mui/icons-material';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
+import emailjs from '@emailjs/browser'
 
 
+// Your EmailJS service ID
+const serviceId = 'service_6wo7u4s';
+// Your EmailJS template ID
+const templateId = 'template_1vud1ae';
+// Your EmailJS user ID
+const userId = 'G_P5l09Jl2df-aRca';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -19,34 +26,62 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function RequestQuote() {
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        phone: '',
-        email: '',
-        POI: '',
-        POD: '',
-        typeOfShipment: '',
-        shipmentIncoterms: '',
-        size: '',
-        commodity: '',
-        cargoType: '',
-        deliveryRequirements: '',
-        help: '',
-        agree: false
-    });
+ 
+    const [formData, setFormData] = useState({});
 
-    const handleChange = (event) => {
-        const { id, value } = event.target;
-        setFormData({ ...formData, [id]: value });
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-
-    const handleCheckboxChange = (event) => {
-        const { id, checked } = event.target;
-        setFormData({ ...formData, [id]: checked });
-    };
+ 
 
     const classes = useStyles();
+
+    const messageTemplate = (formData) => {
+        return `
+        First Name: ${formData.firstName}
+        Last Name: ${formData.lastName}
+        Phone: ${formData.phone}
+        Email: ${formData.email}
+        Port of Loading (POI): ${formData.POI || 'Not provided'}
+        Port of Discharge (POD): ${formData.POD || 'Not provided'}
+        Type of Shipment: ${formData.typeOfShipment || 'Not provided'}
+        Shipment Incoterms: ${formData.shipmentIncoterms || 'Not provided'}
+        Size: ${formData.size || 'Not provided'}
+        Commodity: ${formData.commodity || 'Not provided'}
+        Cargo Type: ${formData.cargoType || 'Not provided'}
+        Delivery Requirements: ${formData.deliveryRequirements || 'Not provided'}
+        Any other delivery instructions:
+        ${formData.help || 'No specific delivery instructions provided'}
+        
+        ${formData.agree ? 'The visitor has agreed to the Victor Global Pty Ltd Privacy Policy and Terms and Conditions.' : 'The visitor has not agreed to the privacy policy and terms and conditions.'}`;
+    };
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Send email using EmailJS
+        emailjs.send(serviceId, templateId,
+            {
+                from_name: formData.firstName,
+                to_name: 'Victor Global team',
+                from_email: formData.email,
+                to_email: 'victorglobalptyltd@gmail.com',
+                message: messageTemplate(formData),
+            }, userId)
+            .then(() => {
+                alert('Thank you. We will get back to you as soon as possible.')
+                setFormData({})
+            }, (error) => {
+
+                console.log(error);
+
+                alert('Something went wrong.')
+            }
+
+            )
+    };
+
 
     return (
         <div className='container'>
@@ -62,52 +97,65 @@ function RequestQuote() {
                 <div className='col-md-8 my-3'>
                     <h2 className='contactus-subtitle'>{requestQuotePageData.subtitle}</h2>
                     <p className='contactus-description'>{requestQuotePageData.description}</p>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className={classes.root}>
                             <Grid container spacing={3}>
                                 {requestQuotePageData.inputFields.map((field, index) => (
                                     <Grid item xs={12} sm={field.type === 'textarea' || field.type === 'checkbox' ? 12 : 6} key={field.id}>
-                                        {field.type === 'select' ? (
-                                            <FormControl fullWidth>
-                                                <InputLabel id={field.id}>{field.label}</InputLabel>
-                                                <Select
-                                                    label={field.label}
-                                                    labelId={field.id}
-                                                    onChange={handleChange}
-                                                    id={field.id}
-                                                    fullWidth
-                                                >
-                                                    {field.options.map((option, optionIndex) => (
-                                                        <MenuItem key={optionIndex} value={option}>
-                                                            {option}
-                                                        </MenuItem>
-                                                    ))}
-                                                </Select>
-                                            </FormControl>
-                                        ) : field.type === 'textarea' ? (
-                                            <TextField
-                                                label={field.label}
-                                                multiline
-                                                onChange={handleChange}
-                                                rows={field.rows}
-                                                required={field.required}
-                                                fullWidth
-                                            />
-                                        ) : field.type === 'checkbox' ? (
-                                            <FormControlLabel
-                                                className='mb-2'
-                                                control={<Checkbox id={field.id} onChange={handleCheckboxChange} />}
-                                                label={field.label}
-                                            />
-                                        ) : (
-                                            <TextField
-                                                onChange={handleChange}
-                                                label={field.label}
-                                                required={field.required}
-                                                fullWidth
-                                            />
-                                        )}
-                                    </Grid>
+                                    {field.type === 'select' ? (
+                                      <FormControl fullWidth>
+                                        <InputLabel id={`${field.id}-label`}>{field.label}</InputLabel>
+                                        <Select
+                                          label={field.label}
+                                          labelId={`${field.id}-label`}
+                                          onChange={handleChange}
+                                          id={field.id}
+                                        name={field.id}
+                                          fullWidth
+                                          value={formData[field.id] || ''}
+                                        >
+                                          {field.options.map((option, optionIndex) => (
+                                            <MenuItem key={optionIndex} value={option}>
+                                              {option}
+                                            </MenuItem>
+                                          ))}
+                                        </Select>
+                                      </FormControl>
+                                    ) : field.type === 'textarea' ? (
+                                      <TextField
+                                        label={field.label}
+                                        multiline
+                                        rows={field.rows}
+                                        name={field.id}
+                                        value={formData[field.id] || ''}
+                                        onChange={handleChange}
+                                        required={field.required}
+                                        fullWidth
+                                      />
+                                    ) : field.type === 'checkbox' ? (
+                                      <FormControlLabel
+                                        control={
+                                          <Checkbox
+                                            id={field.id}
+                                            checked={formData[field.id] || false}
+                                            onChange={handleChange}
+                                            name={field.id}
+                                          />
+                                        }
+                                        label={field.label}
+                                      />
+                                    ) : (
+                                      <TextField
+                                        label={field.label}
+                                        name={field.id}
+                                        value={formData[field.id] || ''}
+                                        onChange={handleChange}
+                                        required={field.required}
+                                        fullWidth
+                                      />
+                                    )}
+                                  </Grid>
+                                  
                                 ))}
                             </Grid>
                         </div>

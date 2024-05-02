@@ -322,7 +322,7 @@ const requestQuotePageData = {
     }, {
       label: "Commodity",
       type: "text",
-      id: "POD"
+      id: "commodity"
     }, {
       label: "Cargo Type",
       type: "select",
