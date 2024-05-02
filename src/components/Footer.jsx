@@ -43,8 +43,9 @@ function Footer() {
                     </div> */}
                 </div>
                 <div className="row">
-                    <div className="col-md-12 text-center">
-                        <div className='footer-copyright' dangerouslySetInnerHTML={{ __html: footerContent.copyright }} />
+                    <div className="col-md-12 d-flex justify-content-between">
+                        <div className='footer-copyright text-center' dangerouslySetInnerHTML={{ __html: footerContent.copyright }} />
+                        <div className='footer-copyright text-center' dangerouslySetInnerHTML={{ __html: footerContent.poweredBy }} />
                     </div>
                 </div>
             </div>

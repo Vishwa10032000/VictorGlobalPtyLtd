@@ -381,7 +381,8 @@ const footerContent = {
     Services: '/services',
     Contact: '/contactus'
   },
-  copyright: '&copy; 2024 Victor Global Pty Ltd. All Rights Reserved.'
+  copyright: '&copy; 2024 Victor Global Pty Ltd. All Rights Reserved.',
+  poweredBy: 'Powered By <b>TNXT India Private Limited</b>'
 };
 
 export default footerContent;
