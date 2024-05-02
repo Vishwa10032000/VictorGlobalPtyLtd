@@ -87,7 +87,7 @@ const homePageData = {
       {
         image: LogisticsSolutionsImage,
         title: "Logistics Solutions",
-        description: "At Victor Global, we can transport 20ft and 40ft containers as side lifter and general container transport. We can also do heavy lift transport, LCL cargo transport and air freight transport."
+        description: "At Victor Global, we can transport all kinds of containers as side lifter and general container transport. We can also do heavy lift transport, LCL cargo transport and air freight transport."
       }
     ]
   },
