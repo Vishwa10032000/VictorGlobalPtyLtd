@@ -16,12 +16,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// Your EmailJS service ID
-const serviceId = 'service_6wo7u4s';
-// Your EmailJS template ID
-const templateId = 'template_1vud1ae';
-// Your EmailJS user ID
-const userId = 'G_P5l09Jl2df-aRca';
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const userId = process.env.REACT_APP_EMAILJS_USER_ID;
+
 
 function ContactUs() {
 
