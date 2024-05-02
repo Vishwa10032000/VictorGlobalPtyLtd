@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VictorGlobalPtyLtd/static/css/main.bfb54507.css",
-    "main.js": "/VictorGlobalPtyLtd/static/js/main.67e9d64e.js",
+    "main.js": "/VictorGlobalPtyLtd/static/js/main.e2e30c90.js",
     "static/js/453.09ea3606.chunk.js": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js",
     "static/media/StorageSolutions.jpg": "/VictorGlobalPtyLtd/static/media/StorageSolutions.813fb6f1d02b161d5df9.jpg",
     "static/media/China.jpg": "/VictorGlobalPtyLtd/static/media/China.8e4384e959f492a4de08.jpg",
@@ -19,11 +19,11 @@
     "static/media/OurServices2.svg": "/VictorGlobalPtyLtd/static/media/OurServices2.0b9de7fae586fa0908b9bb9f75beffa1.svg",
     "index.html": "/VictorGlobalPtyLtd/index.html",
     "main.bfb54507.css.map": "/VictorGlobalPtyLtd/static/css/main.bfb54507.css.map",
-    "main.67e9d64e.js.map": "/VictorGlobalPtyLtd/static/js/main.67e9d64e.js.map",
+    "main.e2e30c90.js.map": "/VictorGlobalPtyLtd/static/js/main.e2e30c90.js.map",
     "453.09ea3606.chunk.js.map": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfb54507.css",
-    "static/js/main.67e9d64e.js"
+    "static/js/main.e2e30c90.js"
   ]
 }
