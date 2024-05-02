@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import { KeyboardArrowUp } from '@mui/icons-material';
+import logo from '../assets/logo.png'
 
 function Header() {
     const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -41,9 +42,10 @@ function Header() {
         <>
             <Navbar bg="transparent" expand="lg" variant="dark">
                 <div className='container d-flex justify-content-between'>
-                    <Navbar.Brand className='col-1 col-md-2' href="#home">
-                        <Link className='text-decoration-none' style={{ color: "var(--primary-color)" }} onClick={handleChange} to="/">
-                            {/* <h2>Victor Global Pty Ltd</h2> */}
+                    <Navbar.Brand className='col-1 col-md-2 d-flex align-items-center' href="#home">
+                        <Link className='text-decoration-none d-flex' style={{ color: "var(--primary-color)" }} onClick={handleChange} to="/">
+                            <img src={logo} alt='logo' width="45px" height="100%"/>
+                            <h3>Victor Global Pty Ltd</h3>
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle className='col-md-1 col-2' style={{ background: "var(--primary-color)" }} aria-controls="basic-navbar-nav" />

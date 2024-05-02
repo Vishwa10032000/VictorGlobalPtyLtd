@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import logo from '../assets/VictorGlobalLogo.png';
+import logo from '../assets/logo.png';
 import { footerContent } from '../data/Data';
 // import { ArrowOutward } from '@mui/icons-material';
 
@@ -14,9 +14,10 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="container mt-5">
-                <div className="row">
-                    <Link className='text-decoration-none' style={{ color: "var(--primary-color)" }} onClick={handleChange} to="/">
-                        <h2>Victor Global Pty Ltd</h2>
+                <div className="row d-flex align-items-center">
+                    <Link className='text-decoration-none d-flex' style={{ color: "var(--primary-color)" }} onClick={handleChange} to="/">
+                    <img src={logo} alt='logo' width="45px" height="100%"/>
+                        <h3>Victor Global Pty Ltd</h3>
                     </Link>
                     <div className='col-md-6 my-3'>
                         <h2 className='footer-heading'>{footerContent.address.title}</h2>
