@@ -25,9 +25,24 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .App {
-  background: linear-gradient(to bottom, var(--white-color), var(--primary-lite-color));
+  background: linear-gradient(-45deg,var(--primary-lite-color) ,   var(--primary-lite-color),var(--white-color),var(--white-color));
   min-height: 100vh;
+  background-size: 400% 400%; /* Adjust this size as per your preference */
+  animation: gradientAnimation 15s ease infinite;
 }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .services-container {
   display: flex;
