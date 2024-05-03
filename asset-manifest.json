@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/VictorGlobalPtyLtd/static/css/main.bfb54507.css",
+    "main.css": "/VictorGlobalPtyLtd/static/css/main.463a7630.css",
     "main.js": "/VictorGlobalPtyLtd/static/js/main.e12a223a.js",
     "static/js/453.09ea3606.chunk.js": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js",
     "static/media/StorageSolutions.jpg": "/VictorGlobalPtyLtd/static/media/StorageSolutions.813fb6f1d02b161d5df9.jpg",
@@ -19,12 +19,12 @@
     "static/media/ContactUs.svg": "/VictorGlobalPtyLtd/static/media/ContactUs.ab12e6c0567b5e8610e545c17bd69f1a.svg",
     "static/media/OurServices2.svg": "/VictorGlobalPtyLtd/static/media/OurServices2.0b9de7fae586fa0908b9bb9f75beffa1.svg",
     "index.html": "/VictorGlobalPtyLtd/index.html",
-    "main.bfb54507.css.map": "/VictorGlobalPtyLtd/static/css/main.bfb54507.css.map",
+    "main.463a7630.css.map": "/VictorGlobalPtyLtd/static/css/main.463a7630.css.map",
     "main.e12a223a.js.map": "/VictorGlobalPtyLtd/static/js/main.e12a223a.js.map",
     "453.09ea3606.chunk.js.map": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfb54507.css",
+    "static/css/main.463a7630.css",
     "static/js/main.e12a223a.js"
   ]
 }
