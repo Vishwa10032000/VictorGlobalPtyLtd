@@ -248,7 +248,7 @@ const contactUsPageData = {
       {
         icon: LocationCityOutlined,
         label: "Location",
-        value: "201/14 , Elizabeth Street, Malvern Victoria Melbourne 3144, Australia"
+        value: "27/ 820-828 Princes Highway, Springvale 3171 Melbourne Australia"
       },
       {
         icon: EmailOutlined,
@@ -357,7 +357,7 @@ const footerContent = {
       {
         icon: LocationCityOutlined,
         label: "Location",
-        value: "201/14 , Elizabeth Street, Malvern Victoria Melbourne 3144, Australia"
+        value: "27/ 820-828 Princes Highway, Springvale 3171 Melbourne Australia"
       },
       {
         icon: EmailOutlined,
