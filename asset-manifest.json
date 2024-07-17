@@ -1,8 +1,14 @@
 {
   "files": {
-    "main.css": "/VictorGlobalPtyLtd/static/css/main.463a7630.css",
-    "main.js": "/VictorGlobalPtyLtd/static/js/main.e12a223a.js",
+    "main.css": "/VictorGlobalPtyLtd/static/css/main.d92a0cf5.css",
+    "main.js": "/VictorGlobalPtyLtd/static/js/main.dccdcad2.js",
     "static/js/453.09ea3606.chunk.js": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js",
+    "static/media/TechnologyProducts.jpg": "/VictorGlobalPtyLtd/static/media/TechnologyProducts.4b9fec2739ee37e8c53e.jpg",
+    "static/media/PharmaceuticalProducts.jpg": "/VictorGlobalPtyLtd/static/media/PharmaceuticalProducts.bb058ea01226f1132bdf.jpg",
+    "static/media/LifestyleandFashionGoods.jpg": "/VictorGlobalPtyLtd/static/media/LifestyleandFashionGoods.42884d5195b253c7f036.jpg",
+    "static/media/FastMovingConsumerGoods.jpg": "/VictorGlobalPtyLtd/static/media/FastMovingConsumerGoods.34280b0e5dce3d836d19.jpg",
+    "static/media/RetailGoods.jpg": "/VictorGlobalPtyLtd/static/media/RetailGoods.0ed96933f521dd1fe3a2.jpg",
+    "static/media/GlobalSourcing.jpg": "/VictorGlobalPtyLtd/static/media/GlobalSourcing.ed9262e38848bcce5271.jpg",
     "static/media/StorageSolutions.jpg": "/VictorGlobalPtyLtd/static/media/StorageSolutions.813fb6f1d02b161d5df9.jpg",
     "static/media/China.jpg": "/VictorGlobalPtyLtd/static/media/China.8e4384e959f492a4de08.jpg",
     "static/media/logo.png": "/VictorGlobalPtyLtd/static/media/logo.c52b0b1e574323d23387.png",
@@ -19,12 +25,12 @@
     "static/media/ContactUs.svg": "/VictorGlobalPtyLtd/static/media/ContactUs.ab12e6c0567b5e8610e545c17bd69f1a.svg",
     "static/media/OurServices2.svg": "/VictorGlobalPtyLtd/static/media/OurServices2.0b9de7fae586fa0908b9bb9f75beffa1.svg",
     "index.html": "/VictorGlobalPtyLtd/index.html",
-    "main.463a7630.css.map": "/VictorGlobalPtyLtd/static/css/main.463a7630.css.map",
-    "main.e12a223a.js.map": "/VictorGlobalPtyLtd/static/js/main.e12a223a.js.map",
+    "main.d92a0cf5.css.map": "/VictorGlobalPtyLtd/static/css/main.d92a0cf5.css.map",
+    "main.dccdcad2.js.map": "/VictorGlobalPtyLtd/static/js/main.dccdcad2.js.map",
     "453.09ea3606.chunk.js.map": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.463a7630.css",
-    "static/js/main.e12a223a.js"
+    "static/css/main.d92a0cf5.css",
+    "static/js/main.dccdcad2.js"
   ]
 }
