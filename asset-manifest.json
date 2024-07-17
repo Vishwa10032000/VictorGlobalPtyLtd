@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VictorGlobalPtyLtd/static/css/main.d92a0cf5.css",
-    "main.js": "/VictorGlobalPtyLtd/static/js/main.dccdcad2.js",
+    "main.js": "/VictorGlobalPtyLtd/static/js/main.a9c5aafb.js",
     "static/js/453.09ea3606.chunk.js": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js",
     "static/media/TechnologyProducts.jpg": "/VictorGlobalPtyLtd/static/media/TechnologyProducts.4b9fec2739ee37e8c53e.jpg",
     "static/media/PharmaceuticalProducts.jpg": "/VictorGlobalPtyLtd/static/media/PharmaceuticalProducts.bb058ea01226f1132bdf.jpg",
@@ -26,11 +26,11 @@
     "static/media/OurServices2.svg": "/VictorGlobalPtyLtd/static/media/OurServices2.0b9de7fae586fa0908b9bb9f75beffa1.svg",
     "index.html": "/VictorGlobalPtyLtd/index.html",
     "main.d92a0cf5.css.map": "/VictorGlobalPtyLtd/static/css/main.d92a0cf5.css.map",
-    "main.dccdcad2.js.map": "/VictorGlobalPtyLtd/static/js/main.dccdcad2.js.map",
+    "main.a9c5aafb.js.map": "/VictorGlobalPtyLtd/static/js/main.a9c5aafb.js.map",
     "453.09ea3606.chunk.js.map": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d92a0cf5.css",
-    "static/js/main.dccdcad2.js"
+    "static/js/main.a9c5aafb.js"
   ]
 }
