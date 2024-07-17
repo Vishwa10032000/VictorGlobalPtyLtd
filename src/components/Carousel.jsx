@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import FastMovingConsumerGoodsImage from '../assets/FastMovingConsumerGoods.jpg';
 import GlobalSourcingImage from '../assets/GlobalSourcing.jpg';
 import RetailGoodsImage from '../assets/RetailGoods.jpg';
@@ -20,7 +20,7 @@ const CarouselSlider = () => {
   const [sliderItems, setSliderItems] = useState(initialItems);
   const sliderRef = useRef(null);
 
-  const moveSlider = (direction) => {
+  const moveSlider = useCallback((direction) => {
     let newItems = [...sliderItems];
     if (direction === 'next') {
       const firstItem = newItems.shift();
@@ -32,7 +32,7 @@ const CarouselSlider = () => {
       sliderRef.current.classList.add('prev');
     }
     setSliderItems(newItems);
-  };
+  }, [sliderItems]);
 
   useEffect(() => {
     const handleAnimationEnd = () => {
@@ -50,10 +50,10 @@ const CarouselSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       moveSlider('next');
-    }, 8000); // Change slides every 3 seconds
+    }, 8000); // Change slides every 8 seconds
 
     return () => clearInterval(interval); // Clear interval on component unmount
-  }, [sliderItems]);
+  }, [moveSlider]);
 
   return (
     <div className="global-background">
