@@ -18,13 +18,13 @@ const ServiceCard = ({ title, description, icon: Icon }) => {
   
   const Services = () => {
     return (
-      <div className="container">
+      <div className='container pt-5'>
         <div className="row align-items-center my-5">
         <div className="col-md-5">
           <h2 className='service-heading'>{servicesData.title}</h2>
         </div>
         <div className="col-md-7">
-          <img src={servicesData.image} alt={servicesData.title} width="100%" />
+          <img className="image-shadow"  src={servicesData.image} alt={servicesData.title} width="100%" />
         </div>
        
       </div>

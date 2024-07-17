@@ -12,21 +12,21 @@ const AboutUs = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container mt-5'>
       <div className="row align-items-center ">
         <div className="col-md-6">
           <h2 className='service-heading'>{aboutUsPageData.welcomeMessage}</h2>
           <p className="service-description text-center">{aboutUsPageData.description}</p>
         </div>
         <div className="col-md-6">
-          <img src={aboutUsPageData.image} alt={aboutUsPageData.welcomeMessage} width="100%" />
+          <img className="image-shadow" src={aboutUsPageData.image} alt={aboutUsPageData.welcomeMessage} width="100%" />
         </div>
       </div>
       <div className='row'>
         {aboutUsPageData.sections.map(section => (
           <div className='col-lg-3 col-md-6 col-sm-6 col-12 my-3' key={section.title}>
             <div className='aboutus-container shadow'>
-              <img src={section.image} alt={section.title} width="100%" height="200px" />
+              <img  src={section.image} alt={section.title} width="100%" height="200px" />
               <h2 className='aboutus-title'>{section.title}</h2>
               <p className='aboutus-description'>
                 {expandedSections[section.title] ? section.content : `${section.content.substring(0, 150)}...`}

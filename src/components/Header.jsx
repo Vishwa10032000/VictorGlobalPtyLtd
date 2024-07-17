@@ -43,9 +43,9 @@ function Header() {
             <Navbar bg="transparent" expand="lg" variant="dark">
                 <div className='container d-flex justify-content-between'>
                     <Navbar.Brand className='col-1 col-md-2 d-flex align-items-center' href="#home">
-                        <Link className='text-decoration-none d-flex' style={{ color: "var(--primary-color)" }} onClick={handleChange} to="/">
+                        <Link className='text-decoration-none d-flex align-items-center' style={{ color: "var(--primary-color)" }} onClick={handleChange} to="/">
                             <img src={logo} alt='logo' width="45px" height="100%"/>
-                            <h3>Victor Global Pty Ltd</h3>
+                            <div className='logo-text'>Victor Global Pty Ltd</div>
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle className='col-md-1 col-2' style={{ background: "var(--primary-color)" }} aria-controls="basic-navbar-nav" />

@@ -2,6 +2,7 @@ import React from 'react'
 import { homePageData } from '../data/Data';
 import { Link } from 'react-router-dom';
 import { ArrowOutward } from '@mui/icons-material';
+import CarouselSlider from '../components/Carousel';
 
 
 function Home() {
@@ -13,17 +14,18 @@ function Home() {
     });
   }
   return (
+    <>
+    <CarouselSlider/>
     <div className='container'>
-      <div className="row align-items-center ">
+      {/* <div className="row align-items-center ">
         <div className="col-lg-5 col-md-12 my-3">
           <h2 className='home-heading'>{homePageData.welcomeMessage}</h2>
           <h2 className="home-slogan">{homePageData.description}</h2> 
-
         </div>
         <div className="col-lg-7 col-md-12 my-3">
-          <img src={homePageData.image} alt={homePageData.welcomeMessage} width="100%" />
+          <img className="image-shadow" src={homePageData.image} alt={homePageData.welcomeMessage} width="100%" />
         </div>
-      </div>
+      </div> */}
       <div className='row'>
         <div className='col-md-12 my-3'>
           <h2 className='home-heading'>{homePageData.overview.title}</h2>
@@ -102,6 +104,7 @@ function Home() {
           ))}
       </div>
     </div>
+    </>
   )
 }
 

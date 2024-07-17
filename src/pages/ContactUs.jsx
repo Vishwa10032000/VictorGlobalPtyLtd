@@ -83,13 +83,13 @@ function ContactUs() {
   // }
 
   return (
-    <div className='container'>
+    <div className='container mt-5'>
       <div className="row align-items-center">
         <div className="col-md-6">
           <h2 className='service-heading'>{contactUsPageData.title}</h2>
         </div>
         <div className="col-md-6">
-          <img src={contactUsPageData.image} alt={contactUsPageData.title} width="100%" />
+          <img className="image-shadow" src={contactUsPageData.image} alt={contactUsPageData.title} width="100%" />
         </div>
       </div>
       <div className='row'>
