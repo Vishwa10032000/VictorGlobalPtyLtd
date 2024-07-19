@@ -42,7 +42,7 @@ function Header() {
         <>
             <Navbar bg="transparent" expand="lg" variant="dark">
                 <div className='container d-flex justify-content-between'>
-                    <Navbar.Brand className='col-1 col-md-2 d-flex align-items-center' href="#home">
+                    <Navbar.Brand className='col-1 col-md-2 d-flex align-items-center   ' href="#home">
                         <Link className='text-decoration-none d-flex align-items-center' style={{ color: "var(--primary-color)" }} onClick={handleChange} to="/">
                             <img src={logo} alt='logo' width="45px" height="100%"/>
                             <div className='logo-text'>Victor Global Pty Ltd</div>
@@ -50,10 +50,11 @@ function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle className='col-md-1 col-2' style={{ background: "var(--primary-color)" }} aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-                        <Nav className="col-md-6 d-flex justify-content-between">
+                        <Nav className="col-md-7 d-flex justify-content-between">
                             <Nav.Link style={{ color: location.pathname === '/' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/' ? "2px" : "0" }} as={Link} to="/">Home</Nav.Link>
                             <Nav.Link style={{ color: location.pathname === '/aboutus' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/aboutus' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/aboutus' ? "2px" : "0" }} as={Link} to="/aboutus">About Us</Nav.Link>
                             <Nav.Link style={{ color: location.pathname === '/services' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/services' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/services' ? "2px" : "0" }} as={Link} to="/services">Services</Nav.Link>
+                            <Nav.Link style={{ color: location.pathname === '/products' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/products' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/products' ? "2px" : "0" }} as={Link} to="/products">Products</Nav.Link>
                             <Nav.Link style={{ color: location.pathname === '/contactus' ? "var(--primary-color)" : "var(--secondary-color)", borderBottom: location.pathname === '/contactus' ? "2px solid var(--primary-color)" : "none", paddingBottom: location.pathname === '/contactus' ? "2px" : "0" }} as={Link} to="/contactus">Contact Us</Nav.Link>
                             {/* <Link className='text-decoration-none my-1' to="/requestquote">
                                 <button className='primary-btn d-flex align-items-center'>Request Quote <ArrowOutward /></button>

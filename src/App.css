@@ -282,6 +282,7 @@ h1,h2,h3,h4,h5,h6{
   box-sizing: border-box;
   color: #ffff;
   text-shadow: 0 5px 10px #0004;
+
 }
 
 .slider .list .item .content .title,
@@ -502,3 +503,30 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
+
+.products-images{
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.vertical-line {
+  padding: 0.8px;
+  background-color: var(--primary-color); /* Adjust color as needed */
+  margin: 0 15px; /* Adjust spacing as needed */
+}
+
+/* .animated-slide-left, .animated-slide-right {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 1s, transform 1s;
+}
+
+.animate.animated-slide-left {
+  transform: translateX(110%);
+  opacity: 1;
+}
+
+.animate.animated-slide-right {
+  transform: translateX(-110%);
+  opacity: 1;
+} */

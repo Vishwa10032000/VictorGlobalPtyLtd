@@ -6,6 +6,7 @@ import PharmaceuticalProductsImage from '../assets/PharmaceuticalProducts.jpg';
 import LifestyleandFashionGoodsImage from '../assets/LifestyleandFashionGoods.jpg';
 import TechnologyProductsImage from '../assets/TechnologyProducts.jpg';
 import { ArrowLeft, ArrowRight } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 
 const CarouselSlider = () => {
   const initialItems = [
@@ -58,7 +59,7 @@ const CarouselSlider = () => {
   return (
     <div className="global-background">
       <div className="slider" ref={sliderRef}>
-        <div className="list">
+  <div className="list" >
           {sliderItems.map((item, index) => (
             <div key={item.id} className={`item ${index === 0 ? 'active' : ''}`}>
               <img src={item.image} alt={item.title} />
@@ -67,7 +68,7 @@ const CarouselSlider = () => {
                 <div className="type">{item.type}</div>
                 <div className="description">{item.description}</div>
                 <div className="buttons mt-3">
-                  <button className='primary-btn'>See More</button>
+                 <Link to="/products"> <button className='primary-btn'>See More</button></Link>
                 </div>
               </div>
             </div>

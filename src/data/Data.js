@@ -4,7 +4,6 @@ import {
   LocalPharmacyOutlined,
   StyleOutlined,
   DevicesOutlined, AirplanemodeActive, DirectionsBoat, EmailOutlined, LocalShippingOutlined, LocationCityOutlined, PhoneAndroidOutlined,
-  
   Warehouse,
   SupportAgent,
   Public
@@ -13,6 +12,7 @@ import ServicesImage from '../assets/OurServices.svg'
 import OurServicesImage from '../assets/OurServices2.svg'
 import OurCommitmentImage from '../assets/OurCommitment.svg'
 import AboutUsImage from '../assets/AboutUs.svg'
+import ProductsImage from '../assets/Products.svg'
 import OurReachImage from '../assets/OurReach.svg'
 import TrackingImage from '../assets/Tracking.svg'
 import ContactUsImage from '../assets/ContactUs.svg'
@@ -20,10 +20,39 @@ import RequestQuoteImage from '../assets/RequestQuote.svg'
 import HomeImage from '../assets/Home.svg'
 import StorageSolutionsImage from '../assets/StorageSolutions.jpg'
 import LogisticsSolutionsImage from '../assets/LogisticsSolutions.jpg'
-
 import IndiaImage from '../assets/India.jpg'
 import ChinaImage from '../assets/China.jpg'
 import MalaysiaImage from '../assets/Malaysia.jpg'
+import GlobalSourcingImageOne from '../assets/GlobalSourcingImageOne.jpg'
+import GlobalSourcingImageTwo from '../assets/GlobalSourcingImageTwo.jpg'
+import GlobalSourcingImageThree from '../assets/GlobalSourcingImageThree.jpg'
+import GlobalSourcingImageFour from '../assets/GlobalSourcingImageFour.jpg'
+import FastMovingConsumerGoodsImageOne from '../assets/FastMovingConsumerGoodsImageOne.jpg'
+import FastMovingConsumerGoodsImageTwo from '../assets/FastMovingConsumerGoodsImageTwo.jpg'
+import FastMovingConsumerGoodsImageThree from '../assets/FastMovingConsumerGoodsImageThree.jpg'
+import FastMovingConsumerGoodsImageFour from '../assets/FastMovingConsumerGoodsImageFour.jpg'
+import RetailGoodsImageOne from '../assets/RetailGoodsImageOne.jpg'
+import RetailGoodsImageTwo from '../assets/RetailGoodsImageTwo.jpg'
+import RetailGoodsImageThree from '../assets/RetailGoodsImageThree.jpg'
+import RetailGoodsImageFour from '../assets/RetailGoodsImageFour.jpg'
+import PharmaceuticalProductsImageOne from '../assets/PharmaceuticalProductsImageTwo.jpg'
+import PharmaceuticalProductsImageTwo from '../assets/PharmaceuticalProductsImageOne.jpg'
+import PharmaceuticalProductsImageThree from '../assets/PharmaceuticalProductsImageFour.jpg'
+import PharmaceuticalProductsImageFour from '../assets/PharmaceuticalProductsImageThree.jpg'
+import LifestyleandFashionGoodsImageOne from '../assets/LifestyleandFashionGoodsImageOne.jpg'
+import LifestyleandFashionGoodsImageTwo from '../assets/LifestyleandFashionGoodsImageFour.jpg'
+import LifestyleandFashionGoodsImageThree from '../assets/LifestyleandFashionGoodsImageThree.jpg'
+import LifestyleandFashionGoodsImageFour from '../assets/LifestyleandFashionGoodsImageTwo.jpg'
+import TechnologyProductsImageOne from '../assets/TechnologyProductsImageFour.jpg'
+import TechnologyProductsImageTwo from '../assets/TechnologyProductsImageOne.jpg'
+import TechnologyProductsImageThree from '../assets/TechnologyProductsImageThree.jpg'
+import TechnologyProductsImageFour from '../assets/TechnologyProductsImageTwo.jpg'
+
+
+
+
+
+
 
 
 const homePageData = {
@@ -385,7 +414,65 @@ const footerContent = {
   poweredBy: 'Powered By <b>TNXT India Private Limited</b>'
 };
 
-export default footerContent;
+
+const ProductsPageData = {
+  
+    title: "Our Products",
+    description: "Victor Global Pty Limited serves a diverse range of industries, providing tailored freight forwarding solutions to meet the unique needs of each sector.",
+    image:ProductsImage,
+    sectors: [
+      {
+        name: "Global Sourcing",
+        description: "Effective global product sourcing is essential for securing a competitive edge, enabling you to import top-notch, cost-effective goods to attract customer base. Through strategic partnerships in key regions such as Malaysia, China and India, Victor Global facilitates connections with premier suppliers to address your product sourcing challenges effectively.  ",
+        imageOne:GlobalSourcingImageOne,
+        imageTwo:GlobalSourcingImageTwo,
+        imageThree:GlobalSourcingImageThree,
+        imageFour:GlobalSourcingImageFour,
+      },
+      {
+        name: "Fast-Moving Consumer Goods (FMCG)",
+        description: "We understand the fast-paced nature of the FMCG industry and offer efficient transportation and distribution solutions to ensure your products reach shelves on time, every time.",
+        imageOne:FastMovingConsumerGoodsImageOne,
+        imageTwo:FastMovingConsumerGoodsImageTwo,
+        imageThree:FastMovingConsumerGoodsImageThree,
+        imageFour:FastMovingConsumerGoodsImageFour,
+      },
+      {
+        name: "Retail Goods",
+        description: "From clothing and electronics to home goods and beyond, we specialize in handling retail goods of all types, offering reliable shipping and warehousing solutions to keep your supply chain running smoothly.",
+        imageOne:RetailGoodsImageOne,
+        imageTwo:RetailGoodsImageTwo,
+        imageThree:RetailGoodsImageThree,
+        imageFour:RetailGoodsImageFour,
+      },
+     
+      {
+        name: "Pharmaceutical Products",
+        description: "With strict regulations and sensitive products, the pharmaceutical industry requires precise handling and temperature-controlled environments. We provide specialized logistics solutions to ensure the integrity and security of your pharmaceutical shipments from origin to destination.",
+        imageOne:PharmaceuticalProductsImageOne,
+        imageTwo:PharmaceuticalProductsImageTwo,
+        imageThree:PharmaceuticalProductsImageThree,
+        imageFour:PharmaceuticalProductsImageFour,
+      },
+      {
+        name: "Lifestyle and Fashion Goods",
+        description: "Fashion and lifestyle products demand attention to detail and timely delivery. Our expertise in handling delicate items and our commitment to reliability make us the ideal partner for transporting your fashion and lifestyle goods.",
+        imageOne:LifestyleandFashionGoodsImageOne,
+        imageTwo:LifestyleandFashionGoodsImageTwo,
+        imageThree:LifestyleandFashionGoodsImageThree,
+        imageFour:LifestyleandFashionGoodsImageFour,
+      },
+      {
+        name: "Technology Products",
+        description: "Innovation moves quickly in the technology sector, and so do we. Whether it's the latest gadgets or complex electronic components, we offer tailored logistics solutions to ensure the safe and timely delivery of your technology products.",
+        imageOne:TechnologyProductsImageOne,
+        imageTwo:TechnologyProductsImageTwo,
+        imageThree:TechnologyProductsImageThree,
+        imageFour:TechnologyProductsImageFour,
+      }
+    ]
+  }
 
 
-export { homePageData, servicesData, aboutUsPageData, contactUsPageData, requestQuotePageData, footerContent };
+
+export { homePageData, servicesData, aboutUsPageData, contactUsPageData, requestQuotePageData, footerContent, ProductsPageData };
