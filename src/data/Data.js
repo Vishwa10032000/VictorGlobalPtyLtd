@@ -444,6 +444,7 @@ const ProductsPageData = {
         imageTwo:RetailGoodsImageTwo,
         imageThree:RetailGoodsImageThree,
         imageFour:RetailGoodsImageFour,
+        email:"jaya@victorglobalintl.com",
       },
      
       {
@@ -461,6 +462,7 @@ const ProductsPageData = {
         imageTwo:LifestyleandFashionGoodsImageTwo,
         imageThree:LifestyleandFashionGoodsImageThree,
         imageFour:LifestyleandFashionGoodsImageFour,
+        email:"jaya@victorglobalintl.com",
       },
       {
         name: "Technology Products",
@@ -469,6 +471,7 @@ const ProductsPageData = {
         imageTwo:TechnologyProductsImageTwo,
         imageThree:TechnologyProductsImageThree,
         imageFour:TechnologyProductsImageFour,
+        email:"jaya@victorglobalintl.com",
       }
     ]
   }

@@ -63,6 +63,7 @@ export default function Products() {
                 <div className='col-md-6  my-5'>
                   <h2 className='service-heading'>{sector.name}</h2>
                   <p className="service-description text-center">{sector.description}</p>
+                  {sector.email?<p className="service-description text-center">For current products list please send us an email to <b> {sector.email}</b></p>:''}
                 </div>
               </>
             ) : (
@@ -70,6 +71,7 @@ export default function Products() {
                 <div className='col-md-6  my-5'>
                   <h2 className='service-heading'>{sector.name}</h2>
                   <p className="service-description text-center">{sector.description}</p>
+                  {sector.email?<p className="service-description text-center">For current products list please send us an email to <b> {sector.email}</b></p>:''}
                 </div>
                 <div className='col-md-6 d-flex  my-5'>
                   <div className='mt-5 animated-slide-left' ref={el => (elementsRef.current[index * 2] = el)}>
