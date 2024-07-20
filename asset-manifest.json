@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VictorGlobalPtyLtd/static/css/main.cd293a91.css",
-    "main.js": "/VictorGlobalPtyLtd/static/js/main.1976f68f.js",
+    "main.js": "/VictorGlobalPtyLtd/static/js/main.90a64da3.js",
     "static/js/453.09ea3606.chunk.js": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js",
     "static/media/RetailGoodsImageFour.jpg": "/VictorGlobalPtyLtd/static/media/RetailGoodsImageFour.ba1ca2f4ed1912f6d0ed.jpg",
     "static/media/RetailGoodsImageTwo.jpg": "/VictorGlobalPtyLtd/static/media/RetailGoodsImageTwo.cbb0b7bd8519febba775.jpg",
@@ -51,11 +51,11 @@
     "static/media/OurServices2.svg": "/VictorGlobalPtyLtd/static/media/OurServices2.0b9de7fae586fa0908b9bb9f75beffa1.svg",
     "index.html": "/VictorGlobalPtyLtd/index.html",
     "main.cd293a91.css.map": "/VictorGlobalPtyLtd/static/css/main.cd293a91.css.map",
-    "main.1976f68f.js.map": "/VictorGlobalPtyLtd/static/js/main.1976f68f.js.map",
+    "main.90a64da3.js.map": "/VictorGlobalPtyLtd/static/js/main.90a64da3.js.map",
     "453.09ea3606.chunk.js.map": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd293a91.css",
-    "static/js/main.1976f68f.js"
+    "static/js/main.90a64da3.js"
   ]
 }
