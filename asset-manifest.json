@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/VictorGlobalPtyLtd/static/css/main.cd293a91.css",
+    "main.css": "/VictorGlobalPtyLtd/static/css/main.5bf0c036.css",
     "main.js": "/VictorGlobalPtyLtd/static/js/main.90a64da3.js",
     "static/js/453.09ea3606.chunk.js": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js",
     "static/media/RetailGoodsImageFour.jpg": "/VictorGlobalPtyLtd/static/media/RetailGoodsImageFour.ba1ca2f4ed1912f6d0ed.jpg",
@@ -50,12 +50,12 @@
     "static/media/ContactUs.svg": "/VictorGlobalPtyLtd/static/media/ContactUs.ab12e6c0567b5e8610e545c17bd69f1a.svg",
     "static/media/OurServices2.svg": "/VictorGlobalPtyLtd/static/media/OurServices2.0b9de7fae586fa0908b9bb9f75beffa1.svg",
     "index.html": "/VictorGlobalPtyLtd/index.html",
-    "main.cd293a91.css.map": "/VictorGlobalPtyLtd/static/css/main.cd293a91.css.map",
+    "main.5bf0c036.css.map": "/VictorGlobalPtyLtd/static/css/main.5bf0c036.css.map",
     "main.90a64da3.js.map": "/VictorGlobalPtyLtd/static/js/main.90a64da3.js.map",
     "453.09ea3606.chunk.js.map": "/VictorGlobalPtyLtd/static/js/453.09ea3606.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd293a91.css",
+    "static/css/main.5bf0c036.css",
     "static/js/main.90a64da3.js"
   ]
 }
